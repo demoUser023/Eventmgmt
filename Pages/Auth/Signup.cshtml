@@ -12,10 +12,10 @@
  @if(Model.Message != null){
   <p class="">@Model.Message</p>
  }
-<form class="sign-up-form p-5">
+<form class="sign-up-form p-5" method="post">
   <div class="mb-3">
     <label for="inputUsername" class="form-label">Full Name</label>
-    <input type="email" class="form-control" id="inputUsername" asp-for="UserDetails.Name" aria-describedby="emailHelp" required>   
+    <input type="text" class="form-control" id="inputUsername" asp-for="UserDetails.Name" aria-describedby="emailHelp" required>   
   </div>
   <div class="mb-3">
     <label for="inputEmail" class="form-label">Email address</label>
@@ -31,9 +31,9 @@
     <input type="radio" class="form-radio-input" asp-for="UserDetails.Role" value="Student" id="roleStudent">
     <label class="form-radio-label" for="roleStudent">Student</label>
 
-    <input type="radio" class="form-radio-input" asp-for="UserDetails.Role" value="Teacher" id="roleTeacher">
-    <label class="form-radio-label" for="roleAdmin">Teacher</label>
+    <input type="radio" class="form-radio-input" asp-for="UserDetails.Role" value="Admin" id="roleTeacher">
+    <label class="form-radio-label" for="roleAdmin">Admin</label>
   </div>
-  <a asp-page="/Index" role="button" type="submit" class="btn btn-primary">Submit</a>
+  <button asp-page="/Login" type="submit" value="Submit" class="btn btn-primary">Submit</button>
   
 </form>

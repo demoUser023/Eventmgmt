@@ -1,0 +1,33 @@
+@page
+@model LoginModel
+@{
+    ViewData["Title"] = "Signup  page";
+    Layout=null;
+}
+   <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/signup.css" />
+    
+    <h1>Log In</h1>
+
+    @if(Model.Message != null){
+        <p>@Model.Message</p>
+    }
+    <form class="sign-up-form p-5" method="post">
+
+  <div class="mb-3">
+    <label for="inputEmail" class="form-label">Email address</label>
+    <input type="email" asp-for="InputEmail" class="form-control" id="inputEmail"  required>   
+  </div>
+  <div class="mb-3">
+    <label for="inputPasswprd" class="form-label">Password</label>
+    <input type="password" asp-for="InputPassword" class="form-control" id="exampleInputPassword1" required>
+  </div>
+   <div class="mb-3">
+    <label for="inputCPasswprd" class="form-label">Confirm Password</label>
+    <input type="password" asp-for="ConfirmInputPassword" class="form-control" id="exampleInputPassword1" required>
+  </div>
+ 
+  <button asp-page="/Index" type="submit" value="Submit" class="btn btn-primary">Log In</button>
+  
+</form>
+    
