@@ -8,26 +8,30 @@
     <link rel="stylesheet" href="~/css/signup.css" />
 
  <h1>Signup Form</h1>
+
+ @if(Model.Message != null){
+  <p class="">@Model.Message</p>
+ }
 <form class="sign-up-form p-5">
   <div class="mb-3">
     <label for="inputUsername" class="form-label">Full Name</label>
-    <input type="email" class="form-control" id="inputUsername"  aria-describedby="emailHelp" required>   
+    <input type="email" class="form-control" id="inputUsername" asp-for="UserDetails.Name" aria-describedby="emailHelp" required>   
   </div>
   <div class="mb-3">
     <label for="inputEmail" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="inputEmail"  aria-describedby="emailHelp" required>   
+    <input type="email" class="form-control" id="inputEmail" asp-for="UserDetails.Email" aria-describedby="emailHelp" required>   
   </div>
   <div class="mb-3">
     <label for="inputPasswprd" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" required>
+    <input type="password" class="form-control" asp-for="UserDetails.Password" id="exampleInputPassword1" required>
   </div>
   <div class="mb-3 form-radio">
 
     <label for="whois" class="form-label">Who are you?</label>
-    <input type="radio" class="form-radio-input" id="roleStudent">
+    <input type="radio" class="form-radio-input" asp-for="UserDetails.Role" value="Student" id="roleStudent">
     <label class="form-radio-label" for="roleStudent">Student</label>
 
-    <input type="radio" class="form-radio-input" id="roleStudent">
+    <input type="radio" class="form-radio-input" asp-for="UserDetails.Role" value="Teacher" id="roleTeacher">
     <label class="form-radio-label" for="roleAdmin">Teacher</label>
   </div>
   <a asp-page="/Index" role="button" type="submit" class="btn btn-primary">Submit</a>

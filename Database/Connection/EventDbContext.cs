@@ -2,7 +2,7 @@ using EventManagement.Models;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Database.Connection;
+namespace EventManagement.Database.Connection;
 
 public class EventDbContext : DbContext
 {

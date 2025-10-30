@@ -1,5 +1,5 @@
-using Database.Connection;
 using Microsoft.EntityFrameworkCore;
+using EventManagement.Database.Connection;
 
 var builder = WebApplication.CreateBuilder(args);
 

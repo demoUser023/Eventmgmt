@@ -114,12 +114,14 @@ D:\EventManagement\obj\Debug\net9.0\EventManagement.csproj.CoreCompileInputs.cac
 D:\EventManagement\obj\Debug\net9.0\EventManagement.MvcApplicationPartsAssemblyInfo.cache
 D:\EventManagement\obj\Debug\net9.0\EventManagement.RazorAssemblyInfo.cache
 D:\EventManagement\obj\Debug\net9.0\EventManagement.RazorAssemblyInfo.cs
+D:\EventManagement\obj\Debug\net9.0\EventManagement.sourcelink.json
 D:\EventManagement\obj\Debug\net9.0\rjimswa.dswa.cache.json
 D:\EventManagement\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 D:\EventManagement\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
 D:\EventManagement\obj\Debug\net9.0\scopedcss\bundle\EventManagement.styles.css
 D:\EventManagement\obj\Debug\net9.0\compressed\0jlwvi2012-hrx0hw86uo.gz
 D:\EventManagement\obj\Debug\net9.0\compressed\cn42uxcrc8-agnqukrwh6.gz
+D:\EventManagement\obj\Debug\net9.0\compressed\nooeq2qjow-1e2isd0ijd.gz
 D:\EventManagement\obj\Debug\net9.0\compressed\0gsn9n6l22-iud6yx8so4.gz
 D:\EventManagement\obj\Debug\net9.0\compressed\za9eg7vvi5-61n19gt1b8.gz
 D:\EventManagement\obj\Debug\net9.0\compressed\uodyaqufq5-xtxxf3hu2r.gz
